@@ -1,0 +1,119 @@
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.imagen_receta {
+    background-image: url('../img/3f3b8f74-2fb4-4b72-95fd-de564082416f.png');
+    border-radius: 25px;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    margin-bottom: 2rem;
+    justify-content: center;
+
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+    box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: auto;
+
+}
+
+.contenedor{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/**columnas gris**/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+}
+
+/*para celulares*/
+@media (min-width:310px) and (max-width:529px){
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contenedor{
+        text-align: center;
+    }
+
+    .receta_encabezado .receta_pasos{
+        text-align: center;
+    }
+ }
+
+
+
+/*para tablets*/
+
+@media (max-width:768px) and (max-width:992px)
+{
+    .header .receta_encabezado .receta_pasos .receta_tiempos{
+        width: 50vw;
+        grid-template-columns: repeat(3, 1fr);
+
+
+    }
+    
+}
+
+
+/*texto de recetas*/
+.receta_tiempos {
+    background-color: lightgray;
+    padding-left: 10%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.receta_encabezado {
+    font-weight: 700;
+    font-style: normal;
+    font-weight: bold;
+    
+}
+
+.receta_pasos{
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+.receta_pasos h2 {
+    
+    margin-top: 2rem;
+}
+
+.receta_pasos li {
+    list-style: none;
+    margin-top: 2rem;
+    
+}
+
+
+/*footer*/
+.footer {
+    color: gray;
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+}

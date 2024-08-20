@@ -1,0 +1,13 @@
+.title-section{
+    padding-top: 20px;
+    background-color: lightgray !important;
+    height:300px;
+    overflow: hidden;
+}
+
+.logo-welcome{
+    margin-top:40px ;
+    width:200px;
+    transform: rotate(25deg);
+}
+
