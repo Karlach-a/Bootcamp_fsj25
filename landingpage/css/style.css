@@ -23,6 +23,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    
 }
 
 .logo img {
@@ -32,6 +33,7 @@ body{
 }
 
 .navbar a {
+    
     font-size: 18px;
     color:#222;
     text-decoration: none;
@@ -60,13 +62,64 @@ body{
     width:40px;
     height: 40px;
     background: transparent;
-    border:2px solid  #9b0910;
+    border:2px solid transparent;
     text-decoration: none;
     transform: rotate(45deg);
 }
 
+
+.socialmedia a:hover{
+    border-color:#9b0910;
+}
 .socialmedia a i{
     font-size: 24px;
     color: #9b0910;
     transform: rotate(-45deg);
 }
+
+.info{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    padding:50px 8% 0;
+
+}
+
+.info_contexto{
+    max-width: 630px;
+    padding-top: 50px;
+}
+
+.info_contexto h1{
+    font-size:50px;
+    line-height: 1.2;
+    
+}
+
+.info_contexto h3{
+    font-size: 40px;
+    color:#9b0910;
+}
+
+.info_contexto p{
+    font-size: 16px;
+    margin:15px 0 30px;
+}
+
+.btn{
+
+    display: inline-block;
+    padding: 10px 28px;
+    background: #9b0910;
+    border:2px solid #9b0910;
+    border-radius: 6px ;
+    box-shadow: 0 0 10px rgb(0,0,0,.1);
+    font-size:16px ;
+    color: #eaeaea;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font: weight 600px; 
+}
+
+
