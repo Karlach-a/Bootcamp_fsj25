@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter',sans-serif;
+
+}
+
+body{
+    background-color: white;
+}
+
+.header{
+    position:fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    padding:30px 8%;
+    background: transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img {
+
+    height: 40px;
+
+}
+
+.navbar a {
+    font-size: 18px;
+    color:#222;
+    text-decoration: none;
+    font-weight: 500px;
+    margin:0 20px;
+    transition: 0.3s;
+
+}
+
+.navbar a:hover,
+.navbar a.seleccionada{
+    color:#9b0910;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height:40px;  
+}
+
+.socialmedia a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height: 40px;
+    background: transparent;
+    border:2px solid  #9b0910;
+    text-decoration: none;
+    transform: rotate(45deg);
+}
+
+.socialmedia a i{
+    font-size: 24px;
+    color: #9b0910;
+    transform: rotate(-45deg);
+}
