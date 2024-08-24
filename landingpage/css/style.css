@@ -23,7 +23,6 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    
 }
 
 .logo img {
@@ -65,30 +64,36 @@ body{
     border:2px solid transparent;
     text-decoration: none;
     transform: rotate(45deg);
+    transition: 5s;
 }
 
 
 .socialmedia a:hover{
     border-color:#9b0910;
 }
+
 .socialmedia a i{
     font-size: 24px;
     color: #9b0910;
     transform: rotate(-45deg);
 }
 
+
 .info{
+    position:relative;
     width:100%;
-    height:100%;
+    height:100vh;
     display:flex;
+    justify-content: space-between;
     align-items: center;
     padding:50px 8% 0;
+    overflow: hidden;
 
 }
 
 .info_contexto{
     max-width: 630px;
-    padding-top: 50px;
+   
 }
 
 .info_contexto h1{
@@ -116,10 +121,37 @@ body{
     border-radius: 6px ;
     box-shadow: 0 0 10px rgb(0,0,0,.1);
     font-size:16px ;
-    color: #eaeaea;
+    color: white;
     letter-spacing: 1px;
     text-decoration: none;
-    font: weight 600px; 
+    font: weight 600; 
+    transition: .5s;
 }
 
 
+.btn:hover {
+    background: transparent;
+    color:#9b0910;
+}
+
+.compras_img {
+    position: relative;
+    right: -7%;
+    width: 450px;
+    height: 450px;
+    transform: rotate(45deg);
+}
+
+.compras_img .rombo {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background: transparent;
+    border:25px solid #9b0910;
+    
+}
+
+.compras_img .rombo img{
+    position: absolute;
+    max-width: 750px;
+}
