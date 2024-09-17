@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body class="body">
@@ -15,7 +16,7 @@
                     <h2>K<span>S</span></h2>
                 </section>
                 <ul class="menu-navbar">
-                    <li><a href="#">About me</a></li>
+                    <li ><a href="#" class="activo">About me</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -24,26 +25,27 @@
 
         <main class="main-content">
             <section class="bio">
-                <h1>I'm Karla Chevez</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nemo sit quas dolores quaerat doloribus! Libero non error itaque voluptatum?</p>
-                <a href="#"><button class="btn btn-secondary">Descargar CV</button></a>
+                <h1 class="hello-text">Hello, I'm </h1>
+                <h2 class="name-text">Karla Chevez</h2>
+                <p class="role-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates nemo sit quas dolores quaerat doloribus! Libero non error itaque voluptatum?</p>
+                <a href="#" class="download-cv"><button class="download-cv btn btn-secondary">Dowload CV</button></a>
             </section>
             <section class="img-container">
-                <img src="./assets/images/IMG_20240413_152415.jpg" alt="picture personal de Jairo Vega Romero">
+                <img src="./assets/images/IMG_20240413_152415.png" alt="picture personal de Jairo Vega Romero" class="foto">
             </section>
         </main>
 
         <section class="projects-container m-5 ">
-            <section class="projects-header m-3">
-                <h2 class="text-center">My Projects</h2>
+            <section class="projects-header m-3 ">
+                <h2 class=" pro text-center">My Projects</h2>
             </section>
 
             <section class="projects-box ">
                 <div class="row grid gap-3 d-flex justify-content-center">
 
-                <article class="card col-3">
+                <article class="info card col-3">
                     <section >
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE1qEQJoZ1ByRsXVfXVA5nGoDaK50gkCnn8Q&s" alt="picture of the project">
+                        <img class="card-img-top" src="./assets/images/R.png" alt="picture of the project">
                     </section>
                     <section class="card-body">
                     <section class="card-title">
@@ -57,9 +59,9 @@
                 </article>
          
                 <!-- Agregar una card por proyecto-->
-                <article class="card col-3">
+                <article class="info card col-3">
                     <section >
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE1qEQJoZ1ByRsXVfXVA5nGoDaK50gkCnn8Q&s" alt="picture of the project" srcset="">
+                        <img class="card-img-top" src="./assets/images/R.png" alt="picture of the project" srcset="">
                     </section>
                     <section class="card-body">
                     <section class="card-title">
@@ -72,15 +74,15 @@
                 </section>
                 </article>
 
-                <article class="card col-3">
+                <article class="info card col-3">
                     <section >
-                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE1qEQJoZ1ByRsXVfXVA5nGoDaK50gkCnn8Q&s" alt="picture of the project" srcset="">
+                        <img class="card-img-top" src="./assets/images/R.png" alt="picture of the project" srcset="">
                     </section>
                     <section class="card-body">
                     <section class="card-title">
                         <h1>Hola Mundo</h1>
                     </section>
-                    <section class="card-links">
+                    <section class="info card-links">
                         <a href="#">Github</a>
                         <a href="#">Demo</a>
                     </section>
@@ -90,10 +92,14 @@
             </section>
         </section>
 
-        <section class="contact-form m-3 ">
-            <form action="#" class="card col-6 bg-light">
+        <section class=" contact-form m-3 d-flex justify-content-center">
+            
+            <form action="#" class="formulario card col-6">
+                <section class="projects-header m-3 ">
+                    <h2 class=" pro text-center">Contact:</h2>
+                </section>
 
-                <section class="form-floating mb-3 justify-content-center col-8">
+                <section class=" form-floating mb-3 justify-content-center ">
                     <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                     <label for="floatingInput" class="text-black">Name</label>
                 </section>
@@ -107,15 +113,15 @@
         </section>
 
 
-        <footer class="footer-section ">
-            <section class="footer-content">
+        <footer class="footer-section">
+            <section class="footer-content ">
                 <h2 class="text-center">Karla Chevez Copyright since 2024</h2>
                 <h5 class="text-center">Frontend Developer</h5>
             </section>
-            <section class="social-networks d-flex justify-content-center">
-                <a href="">LinkedIn</a>
-                <a href="">GitHub</a>
-                <a href="">YouTube</a>
+            <section class="socialmedia Scolum grid gap-3 d-flex justify-content-center">
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+                <a href=""><i class='bx bxl-github' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
             </section>
         </footer>
     </div>

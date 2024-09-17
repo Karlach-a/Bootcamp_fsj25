@@ -49,6 +49,7 @@ body{
     color:#9b0910;
 }
 
+
 .socialmedia{
     display: flex;
     justify-content: space-between;
@@ -99,7 +100,7 @@ body{
 }
 
 .info_contexto h1{
-    font-size:50px;
+    font-size:70px;
     line-height: 1.2; 
     opacity: 0;
     animation: slideBottom 1s ease forwards;/*nombre de animacion*/
@@ -164,6 +165,9 @@ body{
     background: white;
     border:25px solid #9b0910;
     box-shadow: -15px 15px 15px rgb(0,0,0,.2);
+    opacity: 0;
+    animation: zoomOut 1s ease forwards;
+    animation-delay:1.6s;
     
 }
 
@@ -173,6 +177,9 @@ body{
     left: -250px;
     max-width: 750px;
     transform: rotate(-45deg);
+    opacity: 0;
+    animation: personas 1s ease forwards;
+    animation-delay:2s;
     
     
 }
@@ -186,6 +193,9 @@ body{
     background: #9b0910;
     transform: rotate(45deg);
     z-index: -1;/**/
+    opacity: 0;
+    animation: rombo2 1s ease forwards;
+    
 
 }
 
@@ -240,5 +250,52 @@ body{
         transform: translateY(0);
         opacity: 1;
     }
+    
+}
+
+@keyframes zoomOut {
+    0%{
+        transform: scale(1.1);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes personas {
+    0%{
+        transform: translate(300px,-300px) scale(0) rotate(-45deg);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: translate(0,0) scale(1) rotate(-45deg);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes rombo2 {
+    0%{
+        right: -40%;
+        opacity: 0;
+    }
+    
+    100%{
+        right:-25%;
+        opacity: 1;
+    }
+    
+}
+
+/*fin de animaciones*/
+
+/*responsivo*/
+
+@media screen and (max-width:768px){
     
 }
