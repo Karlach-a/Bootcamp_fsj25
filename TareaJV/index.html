@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Guia Practica Javascript </title>
+</head>
+
+<body>
+    <h1> Guia- Karla Sofia Argueta Chevez</h1>
+    <h1> Ejercicio 1</h1>
+    <section>
+        <article>
+            Digita tu edad: <input type="text" id="edad">
+
+            <input type="submit" value="enviar" onclick='edadP()'>
+            <br><br>
+            Resultado: <input type="text" id="resp">
+        </article>
+    </section>
+    <br>
+
+    <!--Ejercicio 2-->
+    <h1> Ejercicio 2 - nota final</h1>
+    <section>
+        <article>
+            Nombre del Alumno: <input type="text" id="nombre">
+            <br><br>
+            Carnet: <input type="text" id="carnet">
+            <br><br>
+        </article>
+        <section>
+            Nota Examen <input type="number" class="examen" id="examen">
+            <br><br>
+            Nota Tareas <input type="number" class="tareas" id="tareas">
+            <br><br>
+            Nota Asistencia <input type="number" class="asistencia" id="asistencia">
+            <br><br>
+            Nota Investigacion <input type="number" class="investigacion" id="investigacion">
+        </section>
+
+        <input type="submit" value="enviar" onclick="notafinal()">
+        <br><br>
+
+        Nota Final: <textarea id="notafinal" rows="10"></textarea>
+    </section>
+    <br>
+
+    <!--Ejercicio 3-->
+    <h1> Ejercicio 3 - aumento de salario </h1>
+    <section>
+        <article>
+            Nombre del empleado: <input type="text" id="nombree">
+            <br><br>
+            salario: <input type="number" id="salario">
+            <br><br>
+            categoria: <select name="categoria" id="categoria">
+                <option Id="a" value="A">A 15%</option>
+                <option id="b" value="B">B 30%</option>
+                <option id="c" value="C">C 10%</option>
+                <option id="d" value="D">D 20%</option>
+            </select>
+            <br><br>
+        </article>
+
+        <input type="submit" value="enviar" onclick="aumentoSalarial()">
+        <br><br>
+
+        Nota Final: <textarea id="aumento" rows="10"></textarea>
+    </section>
+    <br>
+
+    <!--Ejercicio 4 -->
+
+    <h1> Ejercicio 4 - numero mayor </h1>
+    <section>
+        <article>
+            Ingrese primer entero <input type="number" id="entero1">
+            <br><br>
+            Ingrese segundo entero <input type="number" id="entero2">
+            <br><br>
+        </article>
+
+        <input type="submit" value="enviar" onclick="enteros()">
+        <br><br>
+
+
+        resultado: <textarea id="resultado" rows="10"></textarea>
+    </section>
+    <br>
+
+    <!--Ejercicio 5-->
+    <h1> Ejercicio 5 - Tienda de coches </h1>
+    <section>
+        <article>
+
+            Elije Modelo de Auto: <select name="modelo" id="modelo">
+                <option Id="FF" value="FORD FIESTA">FORD FIESTA</option>
+                <option id="FFO" value="FORD FOCUS">FORD FOCUS</option>
+                <option id="FE" value="FORD ESCAPE">FORD ESCAPE</option>
+            </select>
+            <br><br>
+            Precio de Vehiculo : <input type="number" id="preciovehiculo">
+            <br><br>
+        </article>
+
+        <input type="submit" value="enviar" onclick="DescuentoAuto()">
+        <br><br>
+
+        Descuento: <textarea id="descuentov" rows="10"></textarea>
+    </section>
+    <br>
+
+    <!--Ejercicio 6 - Descuentos en viajes-->
+    <h1> Ejercicio 6 - Descuentos en viajes </h1>
+    <section>
+        <article>
+            Lugar de Origen<input type="text" id="origen" value="La Palma">
+            <br><br>
+            Precio<input type="number" id="precioViaje">
+            <br><br>
+
+            Elije lugar de destino : <select name="destino" id="destino">
+                <option Id="lacostadelsol" value="La costa del sol">La Costa del Sol</option>
+                <option id="panchimalco" value="Panchimalco">Panchimalco</option>
+                <option id="puertoeltriunfo" value="puertoeltriunfo">Puerto El Triunfo</option>
+
+            </select>
+            <br><br>
+
+        </article>
+
+        <input type="submit" value="enviar" onclick="descuentoviaje()">
+        <br><br>
+
+        Total a Pagar: <textarea id="descuentovi" rows="10"></textarea>
+    </section>
+    <br><br>
+
+    <!--Ejercicio  7 - conteonumeros-->
+    <h1> Ejercicio 7 - Conteo Numeros </h1>
+    <section>
+        <article>
+            Ingrese Numero 1 : <input type="number" id="n0"><br><br>
+            Ingrese Numero 2 : <input type="number" id="n1"><br><br>
+            Ingrese Numero 3 : <input type="number" id="n2"><br><br>
+            Ingrese Numero 4 : <input type="number" id="n3"><br><br>
+            Ingrese Numero 5 : <input type="number" id="n4"><br><br>
+            Ingrese Numero 6 : <input type="number" id="n5"><br><br>
+            Ingrese Numero 7 : <input type="number" id="n6"><br><br>
+            Ingrese Numero 8 : <input type="number" id="n7"><br><br>
+            Ingrese Numero 9 : <input type="number" id="n8"><br><br>
+            Ingrese Numero 10 : <input type="number" id="n9"><br><br>
+            <button type="button" onclick="valores()">Procesar</button>
+            </form>
+
+
+            <br><br>
+            <div id="resultados">
+                <h2>Resultados:</h2>
+                <p id="negativos"></p>
+                <p id="positivos"></p>
+                <p id="multiplosDe15"></p>
+                <p id="acumuladoPares"></p>
+            </div>
+
+        </article>
+    </section>
+
+
+    <!--Ejercicio  8 - tabla de multiplicar-->
+
+    <h1> Ejercicio 8 - Tabla de multiplicar </h1>
+    <section>
+        <article>
+            ingrese numero que desea multiplicar: <input type="number" id="numerom"><br><br>
+            <button type="button" onclick="tablas()">Generar</button>
+
+        </article>
+
+        <h3>Tabla de Multiplicar:</h3>
+        <div id="tabla"></div>
+
+  <!--Ejercicio  9 - celcious a fareneheit-->
+  <h1> Ejercicio 9 - Celcious a Farenheit </h1>
+  <section>
+      <article>
+          Ingrese temperatura en Celcius  <input type="number" id="celcious"><br><br>
+          <button type="button" onclick="temperatura()">Convertir</button> <br>
+      </article>
+
+      <div id="Resultadoc"></div>
+      <p id="f"></p>
+      <p id="Com"></p>
+   </div>
+
+   <!--Ejercicio  10 - promedioestudiantes-->
+   <h1> Ejercicio 10- Promedio Estudiantes</h1><br><br>
+   <h3>Turno Mañana</h3>
+   Edad Estudiante 1 : <input type="number" id="m1"><br><br>
+   Edad Estudiante 2 : <input type="number" id="m2"><br><br>
+   Edad Estudiante 3 : <input type="number" id="m3"><br><br>
+   Edad Estudiante 4 : <input type="number" id="m4"><br><br>
+   Edad Estudiante 5 : <input type="number" id="m5"><br><br>
+   
+
+   <h3> Turno Tarde </h3>
+   Edad Estudiante 1 : <input type="number" id="t1"><br><br>
+   Edad Estudiante 2 : <input type="number" id="t2"><br><br>
+   Edad Estudiante 3 : <input type="number" id="t3"><br><br>
+   Edad Estudiante 4 : <input type="number" id="t4"><br><br>
+   Edad Estudiante 5 : <input type="number" id="t5"><br><br>
+   Edad Estudiante 6 : <input type="number" id="t6"><br><br>
+    
+   <h3> Turno Noche </h3>
+   Edad Estudiante 1 : <input type="number" id="n1"><br><br>
+   Edad Estudiante 2 : <input type="number" id="n2"><br><br>
+   Edad Estudiante 3 : <input type="number" id="n3"><br><br>
+   Edad Estudiante 4 : <input type="number" id="n4"><br><br>
+   Edad Estudiante 5 : <input type="number" id="n5"><br><br>
+   Edad Estudiante 6 : <input type="number" id="n6"><br><br>
+   Edad Estudiante 7 : <input type="number" id="n7"><br><br>
+   Edad Estudiante 8 : <input type="number" id="n8"><br><br>
+   Edad Estudiante 9 : <input type="number" id="n9"><br><br>
+   Edad Estudiante 10 : <input type="number" id="n10"><br><br>
+   Edad Estudiante 11 : <input type="number" id="n11"><br><br>
+   
+   
+   <button type="button" onclick="promedioedades();Promedios()">Promedio</button> <bt></br>
+   <div id="resultadosedad"> 
+    <p id="promediom"></p><br><br>
+    <p id="promediot"></p><br><br>
+    <p id="promedion"></p><br><br>
+    <p id="resultadoedad"></p><br><Br>
+</div>
+    
+        <script type="text/javascript" src="./JS/ejercicios.js">
+
+        </script>
+</body>
+
+</html>
