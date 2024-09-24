@@ -49,4 +49,4 @@ class CabeceraPagina {
 
 const cabecera = new CabeceraPagina('Prueba1', 'Azul', 'Arial');
 cabecera.daralineacion('centrado');
-cabecera.imprimir();
+cabecera.imprimir(); 
