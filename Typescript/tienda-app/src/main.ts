@@ -40,25 +40,42 @@ const tienda= new Tienda();
 
 const form = document.getElementById("formProducto") as HTMLFormElement;
 
-form.addEventListener('submit',(e:SubmitEvent) =>{
-e.preventDefault();
-console.log("hola");
+const productList = document.getElementById("productsList") as HTMLUListElement;
 
-const id= Date.now();
+form.addEventListener('submit', (e:SubmitEvent) => {
+    e.preventDefault();
+    console.log("Holiwis");
+    
+    const id = Date.now()
+    //Seleccionamos los elementos a controlar y retiramos su valor
+     const nombre = (document.getElementById('nombre') as HTMLInputElement).value;
+     const precio = parseFloat((document.getElementById('precio') as HTMLInputElement).value)
+     const cantidad = parseInt((document.getElementById('cantidad') as HTMLInputElement).value);
 
-const nombre =( document.getElementById('nombre') as HTMLInputElement).value;
-const precio =parseFloat((document.getElementById('precio') as HTMLInputElement).value);
+    console.log(id);
+    console.log(nombre);
+    console.log(precio);
+    console.log(cantidad);
+    
+    let productito = new Producto(id,nombre,precio,cantidad)
+    console.log(productito);
+    tienda.agregarProducto(productito);
+});
 
-const cantidad =parseInt((document.getElementById('cantidad') as HTMLInputElement).value);
+function renderProductos(){
+  productList.innerHTML = "";
 
-console.log(id);
-console.log(nombre);
-console.log(precio);
-console.log(cantidad);
+  console.log(tienda.listarProductos());
+  
+  tienda.listarProductos().map( (producto:Producto) => {
+    const productoItem = document.createElement('li');
+    console.log(producto);
+      
+      productoItem.textContent = `${producto.getNombre()} - ${producto.getCantidad()} - $ ${producto.getPrecio()}  `
+      productList.appendChild(productoItem)
+  })
 
-let productito = new Producto(id,nombre,precio,cantidad);
-console.log(productito);
-tienda.agregarProducto(productito);
 
+}
 
-})
+renderProductos()
