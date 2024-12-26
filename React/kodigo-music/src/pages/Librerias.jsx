@@ -14,7 +14,7 @@ import album6 from "../assets/images/SN.jpg";
         <>
             <div>
                 <h1>Tu Biblioteca</h1>
-                <h4>Tus Artistas  Favoritas</h4>
+                <h4>Tus Artistas Favoritos</h4>
             </div>
 
             <div className='row'>
